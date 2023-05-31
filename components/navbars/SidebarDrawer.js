@@ -59,6 +59,8 @@ export default function SidebarDrawer({ onClose, ...rest }) {
                 <NavItem href="#" icon={IoNewspaper} title="Venera/$VeN WHITEPAPER" />
 
                 <NavItem href="about" icon={MdSummarize} title="About Venera/$VEN" />
+                {/* <NavItem href="about" icon={MdSummarize} title="About Venera/$VEN" /> */}
+      <NavItem href="locations" icon={ImEarth} title="locations" />
 
                 <NavItem href="staking" icon={FaFunnelDollar} title="Stake" />
                 <NavItem href="compounding" icon={FaFunnelDollar} title="Compound" />

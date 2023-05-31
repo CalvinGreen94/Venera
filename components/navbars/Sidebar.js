@@ -62,6 +62,7 @@ export default function Sidebar() {
                 <NavItem navSize={navSize} href="#" icon={IoNewspaper} title="Venera/$VeN WHITEPAPER" />
 
                 <NavItem navSize={navSize} href="about" icon={MdSummarize} title="About Venera/VeN" />
+                <NavItem navSize={navSize} href="locations" icon={ImEarth} title="Gallery Locations" />
 
                 <NavItem navSize={navSize} href="staking" icon={FaFunnelDollar} title="Stake VeN" />
                 <NavItem navSize={navSize} href="compounding" icon={TbBusinessplan} title="Compound VeN" />
