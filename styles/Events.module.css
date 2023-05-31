@@ -1,0 +1,128 @@
+/* Event Cards */
+.container {
+  position: relative;
+  width: 100%;
+  border: 0.2px solid #000;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  /* overflow: hidden; */
+  width: 100%;
+  height: 40%;
+  transition: .5s ease;
+}
+
+/* change height */
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay, .container:hover .overlay2 {
+  height: 100%;
+}
+
+.text {
+  color: black;
+  position: absolute;
+  width: 80%;
+  top: 10%;
+  left: 50%;
+  bottom: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* z-index: 1; */
+}
+
+.title {
+  font-size: 18px;
+}
+
+.body {
+  font-size: 14px;
+  top: 10%;
+}
+
+.body2 {
+  font-size: 12px;
+  top: 20%;
+}
+
+.btn {
+  position: relative;
+  /* top: 10px; */
+  padding-top: 12px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.btn:hover .overlay {
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+/* 
+
+#event {
+  background-color: #000;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  min-height: calc(100vh - 77px);
+}
+
+#home>.videoWrapper {
+  position: absolute;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  background-color: #000;
+}
+
+.portalVideo {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -0;
+} */

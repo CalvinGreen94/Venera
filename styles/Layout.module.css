@@ -1,0 +1,10 @@
+.section {
+    position: relative;
+  }
+
+  #about {
+    background:url("/images/bg/Ven.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
