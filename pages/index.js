@@ -13,6 +13,7 @@ import { TbArrowBigDownLines, TbArrowBigUpLines } from 'react-icons/tb'
 import { useInView } from 'react-intersection-observer'
 import MBV from '@components/mint/MintButtonVenera'
 import { Textarea } from '@nextui-org/react';
+import { Card, CardHeader, CardBody, CardFooter,Image,Stack } from '@chakra-ui/react'
 
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)

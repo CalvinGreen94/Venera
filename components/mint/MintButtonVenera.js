@@ -2,6 +2,8 @@ import React from "react";
 import { usePrepareContractWrite, useFeeData, useContractWrite, useAccount } from 'wagmi'
 import { ethers } from "ethers";
 import { useToast, Heading, Center, NumberInputStepper, Box, Spacer, NumberIncrementStepper, Button, Input, NumberDecrementStepper, NumberInputField, Text, FormControl, FormLabel, NumberInput } from "@chakra-ui/react"
+import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+
 import styles from "@styles/MintButton.module.css"
 import Web3 from "web3";
 export default function MBV() {
@@ -76,12 +78,14 @@ export default function MBV() {
 
 
   return (
+    
     <>
       <Box fontSize="xl" fontWeight="bold" align="right">
 
         <form className={styles.btn} onSubmit={async e => {
           e.preventDefault()
         }}>
+          
           <FormControl my="4" maxW="210" minW="210">
             <FormLabel htmlFor="amount" textAlign="right">
               Mint Gallery Membership
