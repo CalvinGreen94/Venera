@@ -4,7 +4,16 @@ import { cardVariant, parentVariant } from '@components/animations/motion'
 import products from '@components/data/products/'
 import ProductCard from '@components/cards/ProductCard'
 import ProductModal from '@components/cards/ProductModal'
-import { Box, Button,Flex, Spacer, Center, Grid, HStack, SimpleGrid, Text, Link, Heading, Collapse, useDisclosure, IconButton } from '@chakra-ui/react'
+import { Box,
+  Badge,
+  Button,
+  Center,
+  Flex,
+  Heading,
+  Link,
+  Text,
+  Spacer,
+  useColorModeValue, Grid, HStack, SimpleGrid, Collapse, useDisclosure, IconButton } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import styles from '@styles/MintButton.module.css'
@@ -13,22 +22,29 @@ import { TbArrowBigDownLines, TbArrowBigUpLines } from 'react-icons/tb'
 import { useInView } from 'react-intersection-observer'
 import MBV from '@components/mint/MintButtonVenera'
 import { Textarea } from '@nextui-org/react';
-import { Card, CardHeader, CardBody, CardFooter,Image,Stack } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui/react'
+import Carousel from "nuka-carousel";
+import Blog from "carousels/blog"
+import Me from "carousels/me"
+import NukaCarousel from "nuka-carousel";
+// import "../styles/styles.css";
 
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
 const MotionIconButton = motion(IconButton)
 
-export default function Home() { 
+export default function Home() {
   const [modalData, setModalData] = useState(null)
   const { isOpen, onToggle } = useDisclosure()
   const [prompt, setPrompt] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState("");
+  const src = "https://source.unsplash.com/random/800x800/";
+  const date = new Date().toString()
 
   const [ref, inView] = useInView({
-      threshold: 0.3,
-      triggerOnce: false
+    threshold: 0.3,
+    triggerOnce: false
   });
 
   const buttonVariants = {
@@ -37,7 +53,7 @@ export default function Home() {
     },
     whileInView: {
       scale: [1.5, 1],
-      transition: {repeat: Infinity, type: "spring", duration: 2}
+      transition: { repeat: Infinity, type: "spring", duration: 2 }
     },
     hover: {
       color: "#008080"
@@ -66,135 +82,25 @@ export default function Home() {
   };
 
   return (
-    <Box>
-        <Head>
-            <title>
-                Venera Club | Dashboard
-            </title>
-        </Head>
-
-        {/* <Center><Heading>Welcome To Venera Club</Heading></Center> */}
-        <Box alignContent="center">
-
-            <Box textStyle="landingPageContent" mb={10} pb={0}>
-              
-                     <Text textStyle="content"><font color="#010332"> 
-                       
-                        Edit this with a more solid description stating benefits of the membership mint
-                       
-                       </font> </Text>
-              
-            <Text textStyle="content"><font color="#010332">
-            <span style={{fontWeight: "400"}}><Center><Heading><Link href="#">Mint a Membership to your favorite gallery</Link></Heading></Center> <Spacer />
-
-            Mint MemberShip To this Art Gallery with a phsycal pass <h1>EDIT:  </h1>
-            
-            <Spacer /> Further Explain Membership privelages </span> <Spacer /> Price and amount of Memberships in existence
-            <Spacer /> 
-            Benefits after mint <span style={{fontWeight: "400"}}><Link href='about'> Member benefits token gated functions </Link>...</span>
-             </font>
-            
-            <Center>
-          <MBV />
-          </Center>
-
-          <Center>
-
-
-<h1>Advertisement Video</h1>
-<video 
-          // className={styles.aboutTrailer}
-          // src="videos/circles.mp4" 
-          alt="generations"
-          controls
-          objectfit="cover"
-          layout="fill"
-      /> 
+    <>
+      <Head>
+        <title>
+          Venera Club | Dashboard
+        </title>
+      </Head>
 
 
 
-</Center> 
-          <Link href="#">See more ...</Link>
-            </Text>
+      <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={20}>
+<Blog />
+<Me />
+    <img src={`${src}?dog`} alt="dog"/>
+      <img src={`${src}?cat`} alt="cat" />
+      <img src={`${src}?goose`} alt="goose" />
+      <img src={`${src}?rabbit`} alt="rabbit" />
+      <img src={`${src}?hedgehog`} alt="hedgehog" />
+    </NukaCarousel>
+    </>
 
-
-            <Text textStyle="content">
-            <span style={{fontWeight: "400"}}>
-            {/* <Heading pt={20}></Heading> */}
-            <Heading pt={20}><Link href="#">Please Read Whitepaper</Link> </Heading>
-
-            <Spacer />
-           <Center>
-            <Text>After Reading Whitepaper feel free to ask our AI chat bot anything </Text>
-            <Spacer />
-            {/* <div className={styles.center}> */}
-            <Textarea status="secondary" 
-            placeholder="Enter a prompt"
-            onChange={(e) => setPrompt(e.target.value)}
-            row="5"
-            cols="50"
-            
-          />
-          <Button onClick={getResponseFromOpenAI}>
-            Get Response
-          </Button>
-
-          <div>
-            {isLoading ? (
-              <div>Waiting for response ...</div>
-            ) : (
-              <div>{response}</div>
-            )}
-          </div>
-          {/* </div> */}
-          </Center> 
-</span>
-</Text>
-      
-            </Box>
-        </Box>
-        
-        {/* <Box p={20} align="center" overflowX="scroll"
-          css={{
-            '&::-webkit-scrollbar': {
-              height: '5px',
-            },
-            '&::-webkit-scrollbar-track': {
-              height: '5px',
-              background: "white",
-            },
-            '&::-webkit-scrollbar-thumb': {
-              background: "teal",
-              borderRadius: '16px',
-            },
-          }}
-          > */}
-
-          {/* <MotionSimpleGrid 
-            display="flex"
-            mt="4"
-            minWidth={{ base: "1500px", md: "2000px" }}
-            spacing="10em"
-            minH="full"
-            variants={parentVariant}
-            animate={inView ? "animate" : "initial"}
-            ref={ref}
-          >
-            {products.map((product, i) => (
-              <MotionBox variants={cardVariant} key={i}>
-                <ProductCard product={product} setModalData={setModalData} />
-              </MotionBox>
-            ))}
-            // </MotionSimpleGrid> */}
-            {/* <ProductModal
-              isOpen={modalData ? true : false}
-              onClose={() => setModalData(null)}
-              modalData={modalData}
-            /> */}
-        {/* </Box> */}
-
-  
-
-    </Box>
   );
 }

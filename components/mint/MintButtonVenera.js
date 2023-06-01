@@ -2,7 +2,7 @@ import React from "react";
 import { usePrepareContractWrite, useFeeData, useContractWrite, useAccount } from 'wagmi'
 import { ethers } from "ethers";
 import { useToast, Heading, Center, NumberInputStepper, Box, Spacer, NumberIncrementStepper, Button, Input, NumberDecrementStepper, NumberInputField, Text, FormControl, FormLabel, NumberInput } from "@chakra-ui/react"
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter,Image,Stack } from '@chakra-ui/react'
 
 import styles from "@styles/MintButton.module.css"
 import Web3 from "web3";
