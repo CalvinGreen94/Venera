@@ -91,7 +91,7 @@ export default function Home() {
 
 
 
-      <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={20}>
+      <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
 <Blog />
 <Me />
     <img src={`${src}?dog`} alt="dog"/>
