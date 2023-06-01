@@ -108,6 +108,7 @@ export default function Me() {
                 #music
               </Badge>
             </Stack>
+            <Spacer />
 
             <Stack
               width={'100%'}
