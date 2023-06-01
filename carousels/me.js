@@ -1,4 +1,5 @@
-import { Box,
+import {
+  Box,
   Badge,
   Button,
   Center,
@@ -7,7 +8,8 @@ import { Box,
   Link,
   Text,
   Spacer,
-  useColorModeValue, Grid, HStack, SimpleGrid, Collapse, useDisclosure, IconButton } from '@chakra-ui/react'
+  useColorModeValue, Grid, HStack, SimpleGrid, Collapse, useDisclosure, IconButton
+} from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import styles from '@styles/MintButton.module.css'
@@ -22,123 +24,134 @@ import NukaCarousel from "nuka-carousel";
 
 export default function Me() {
   const src = "https://source.unsplash.com/random/800x800/";
-  
-  return(
-      <>
+
+  return (
+    <>
       {/* <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={20}> */}
       <Center py={6}>
-      <Stack
-        borderWidth="1px"
-        borderRadius="lg"
-        w={{ sm: '100%', md: '1000px' }}
-        height={{ sm: '476px', md: '800px' }}
-        direction={{ base: 'column', md: 'row' }}
-        bg={useColorModeValue('black', 'gray.900')}
-        boxShadow={'2xl'}
-        padding={4}>
-        <Flex flex={1} bg="black">
-        <div style={{width: '100%', height: '100%', position: 'relative'}}>
-
-          <Image
-            objectFit="fill"
-            boxSize="100%"
-            // sizes='100vw'
-            src={
-              'images/47.jpg'
-            }
-          />
-          </div>
-        </Flex>
         <Stack
-          flex={1}
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-          p={1}
-          pt={2}>
-          <Heading fontSize={'2xl'} color={'white'} fontFamily={'body'}>
-            GammaI
-          </Heading>
-          <Text fontWeight={600} color={'white'} size="sm" mb={4}>
-            @turtleclub420
-          </Text>
-          <Text
-            textAlign={'center'}
-            color={useColorModeValue('white', 'white.400')}
-            px={3}>
-            I built this blog for artists
-            {/* <Link href={'#'} color={'blue.400'}>
+          borderWidth="1px"
+          borderRadius="lg"
+          w={{ sm: '100%', md: '1000px' }}
+          height={{ sm: '476px', md: '550px' }}
+          direction={{ base: 'column', md: 'row' }}
+          bg={useColorModeValue('black', 'gray.900')}
+          boxShadow={'2xl'}
+          padding={4}>
+          {/* <Flex flex={1} bg="black"> */}
+            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+
+              <Image
+                objectFit="fill"
+                // boxSize="100%"
+                // sizes='100vw'
+                src={
+                  'images/47.jpg'
+                }
+              />
+            </div>
+          {/* </Flex> */}
+          <Stack
+            flex={1}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}>
+            {/* <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+
+              <Image
+                objectFit="fill"
+                // boxSize="100%"
+                // sizes='100vw'
+                src={
+                  'images/47.jpg'
+                }
+              />
+            </div> */}
+            <Heading fontSize={'2xl'} color={'white'} fontFamily={'body'}>
+              GammaI
+            </Heading>
+            <Text fontWeight={600} color={'white'} size="sm" mb={4}>
+              @turtleclub420
+            </Text>
+            <Text
+              textAlign={'center'}
+              color={useColorModeValue('white', 'white.400')}
+              px={3}>
+              I built this blog for artists
+              {/* <Link href={'#'} color={'blue.400'}>
               
             </Link> */}
-            <Spacer /> My Tags
-          </Text>
-          <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue('white', 'gray.800')}
-              fontWeight={'400'}>
-              #art
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue('white', 'gray.800')}
-              fontWeight={'400'}>
-              #AI
-            </Badge>
-            <Badge
-              px={2}
-              py={1}
-              bg={useColorModeValue('white', 'gray.800')}
-              fontWeight={'400'}>
-              #music
-            </Badge>
-          </Stack>
+              <Spacer /> My Tags
+            </Text>
+            <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
+              <Badge
+                px={2}
+                py={1}
+                bg={useColorModeValue('white', 'gray.800')}
+                fontWeight={'400'}>
+                #art
+              </Badge>
+              <Badge
+                px={2}
+                py={1}
+                bg={useColorModeValue('white', 'gray.800')}
+                fontWeight={'400'}>
+                #AI
+              </Badge>
+              <Badge
+                px={2}
+                py={1}
+                bg={useColorModeValue('white', 'gray.800')}
+                fontWeight={'400'}>
+                #music
+              </Badge>
+            </Stack>
 
-          <Stack
-            width={'100%'}
-            mt={'2rem'}
-            direction={'row'}
-            padding={2}
-            justifyContent={'space-between'}
-            alignItems={'center'}>
-            <Button
-              flex={1}
-              fontSize={'sm'}
-              rounded={'full'}
-              _focus={{
-                bg: 'gray.200',
-              }}>
-              View art on openSea
-            </Button>
-            <Button
-              flex={1}
-              fontSize={'sm'}
-              rounded={'full'}
-              bg={'blue.400'}
-              color={'white'}
-              boxShadow={
-                '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
-              }
-              _hover={{
-                bg: 'blue.500',
-              }}
-              _focus={{
-                bg: 'blue.500',
-              }}>
-              Follow on Twitter
-            </Button>
+            <Stack
+              width={'100%'}
+              mt={'2rem'}
+              direction={'row'}
+              padding={2}
+              justifyContent={'space-between'}
+              alignItems={'center'}>
+              <Button
+                flex={1}
+                fontSize={'sm'}
+                rounded={'full'}
+                _focus={{
+                  bg: 'gray.200',
+                }}>
+                View art on openSea
+              </Button>
+              <Button
+                flex={1}
+                fontSize={'sm'}
+                rounded={'full'}
+                bg={'blue.400'}
+                color={'white'}
+                boxShadow={
+                  '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+                }
+                _hover={{
+                  bg: 'blue.500',
+                }}
+                _focus={{
+                  bg: 'blue.500',
+                }}>
+                Follow on Twitter
+              </Button>
+            </Stack>
           </Stack>
         </Stack>
-      </Stack>
-    </Center>
-    {/* <img src={`${src}?dog`} alt="dog"/>
+      </Center>
+      {/* <img src={`${src}?dog`} alt="dog"/>
       <img src={`${src}?cat`} alt="cat" />
       <img src={`${src}?goose`} alt="goose" />
       <img src={`${src}?rabbit`} alt="rabbit" />
       <img src={`${src}?hedgehog`} alt="hedgehog" /> */}
-    {/* </NukaCarousel> */}
+      {/* </NukaCarousel> */}
     </>
 
   )
