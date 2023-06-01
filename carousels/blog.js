@@ -79,11 +79,11 @@ export default function Me() {
               textAlign={'center'}
               color={useColorModeValue('white', 'white.400')}
               px={3}>
-              My very talented artists friend Bio..
+              The talented Ecem's Bio..
               {/* <Link href={'#'} color={'blue.400'}>
               
             </Link> */}
-              <Spacer /> My Tags
+              <Spacer /> Ecem's Tags
             </Text>
             <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
               <Badge
