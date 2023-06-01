@@ -46,7 +46,7 @@ export default function Me() {
                 boxSize="100%"
                 // sizes='100vw'
                 src={
-                  'https://pbs.twimg.com/profile_images/1634895849317621761/UGjvgjHe_400x400.jpg'
+                  'https://pbs.twimg.com/media/FxSM1ndXsAA5IR2?format=jpg'
                 }
               />
             </div>
