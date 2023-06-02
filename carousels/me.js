@@ -75,6 +75,7 @@ export default function Me() {
             <Text fontWeight={600} color={'white'} size="sm" mb={4}>
               @turtleclub420
             </Text>
+            <Spacer />
             <Text
               textAlign={'center'}
               color={useColorModeValue('white', 'white.400')}
