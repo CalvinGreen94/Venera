@@ -8,11 +8,13 @@ import {
   Link,
   Text,
   Spacer,
-  useColorModeValue, Grid, HStack, SimpleGrid, Collapse, useDisclosure, IconButton
+  useColorModeValue, Grid, Avatar,HStack, SimpleGrid, Collapse, useDisclosure, IconButton
 } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
-import styles from '@styles/MintButton.module.css'
+// import styles from '@styles/MintButton.module.css'
+import styles from '../components/book.module.css'
+
 import { TbArrowBigDownLines, TbArrowBigUpLines } from 'react-icons/tb'
 // import Title, { LU } from '@components/animations/AnimatedTitles'
 import { useInView } from 'react-intersection-observer'
@@ -28,36 +30,38 @@ export default function Me() {
   return (
     <>
       {/* <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={20}> */}
+      
+      
+      
       <Center py={6}>
+
+
+
+
         <Stack
           borderWidth="1px"
           borderRadius="lg"
-          w={{ sm: '100%', md: '1000px' }}
-          height={{ sm: '476px', md: '550px' }}
+          w={{ sm: '100%', md: '600px' }}
+          height={{ sm: '476px', md: '800px' }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('black', 'gray.900')}
           boxShadow={'2xl'}
           padding={4}>
           {/* <Flex flex={1} bg="black"> */}
             <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-
-              <Image
-                objectFit="fill"
-                // boxSize="100%"
-                // sizes='100vw'
-                src={
-                  'https://pbs.twimg.com/media/Fn8KxirWQAQSB7B?format=jpg'
-                }
-              />
+            <Avatar name='Ecem' src='https://pbs.twimg.com/media/FxSM1ndXsAA5IR2?format=jpg' />
             </div>
           {/* </Flex> */}
+          
+
           <Stack
             flex={1}
             flexDirection="column"
-            justifyContent="center"
+            // justifyContent="center"
             alignItems="center"
-            p={1}
-            pt={2}>
+            // p={1}
+            // pt={2}
+            >
             {/* <div style={{ width: '100%', height: '100%', position: 'relative' }}>
 
               <Image
@@ -69,22 +73,27 @@ export default function Me() {
                 }
               />
             </div> */}
+                        {/* <Text position={'relative'}>Author: GammaI</Text> */}
+
             <Heading fontSize={'2xl'} color={'white'} fontFamily={'body'}>
-              GammaI
+              Title
+               <Spacer />
             </Heading>
-            <Text fontWeight={600} color={'white'} size="sm" mb={4}>
-              @turtleclub420
-            </Text>
+            <Heading fontSize={'medium'} color={'white'} fontFamily={'body'}>
+              Author: Ecem @VeneraSolutions
+            </Heading>
+ 
             <Spacer />
             <Text
               textAlign={'center'}
               color={useColorModeValue('white', 'white.400')}
               px={3}>
-              I built this blog for artists
+              Ecem is an up-and-coming 3D and 2D digital artist with a great background in Blender and an NFT curator / collector on Tezos and Ethereum. <Spacer/> She has a passion for creating unique and innovative art pieces that are both visually stunning and technically impressive. Her work has been featured in various online galleries and publications. <Spacer />Her art pieces are often inspired by her own experiences and the world around her, and she is constantly pushing the boundaries of what is possible with digital art. She is also an avid NFT collector, curating her own collection of rare and unique pieces from the Tezos and Ethereum blockchain. She is passionate about the potential of NFTs and the possibilities they bring to the art world, and is always looking for new and exciting ways to use them. <Spacer/>  With her unique style and technical skill, Ecem is sure to be a force to be reckoned with in the digital art world.
+              </Text>
               {/* <Link href={'#'} color={'blue.400'}>
               
             </Link> */}
-              <Spacer /> My Tags
+              {/* <Spacer /> My Tags
             </Text>
             <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
               <Badge
@@ -108,7 +117,7 @@ export default function Me() {
                 fontWeight={'400'}>
                 #music
               </Badge>
-            </Stack>
+            </Stack> */}
             <Spacer />
 
             <Stack
@@ -148,12 +157,6 @@ export default function Me() {
           </Stack>
         </Stack>
       </Center>
-      {/* <img src={`${src}?dog`} alt="dog"/>
-      <img src={`${src}?cat`} alt="cat" />
-      <img src={`${src}?goose`} alt="goose" />
-      <img src={`${src}?rabbit`} alt="rabbit" />
-      <img src={`${src}?hedgehog`} alt="hedgehog" /> */}
-      {/* </NukaCarousel> */}
     </>
 
   )

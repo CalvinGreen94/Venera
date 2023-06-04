@@ -1,0 +1,8 @@
+{
+    "provider": "Kukai",
+    "version": 3,
+    "walletType": 4,
+    "encryptedSeed": "a900472bc68a2b4834ffdb72e57c3ebf9988390a1c0ff8a9ccc2fd87472b306bf6078d06df65428384060eff5c6dba29f0ce22128a811d3ff295680bd1187e63==2f89f9f9c47c59daa4b6796a322a7864",
+    "encryptedEntropy": "84627b69b6080c0605e7fd9f2f6c6cabc9f0b61886ca5ca6fe3c4c2b9d55e449==7eac5e5b27a1cb2ab6884502ca79d81e",
+    "iv": "e0815f46bcb3d9bbf5320b9fe25d5942"
+}
