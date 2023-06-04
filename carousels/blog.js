@@ -75,21 +75,21 @@ export default function Me() {
               />
             </div> */}
             <Heading fontSize={'2xl'} color={'white'} fontFamily={'body'}>
-              Ecem
+              Venera Magazine
             </Heading>
             <Text fontWeight={600} color={'white'} size="sm" mb={4}>
-              @VeneraSolutions
+              Volume: 1
             </Text>
             <Spacer />
             <Text
               textAlign={'center'}
               color={useColorModeValue('white', 'white.400')}
               px={3}>
-              The talented Ecem's Bio..
+              Venera Magazine is a weekly digital publication organization that presents the Dark Arts.
               {/* <Link href={'#'} color={'blue.400'}>
               
             </Link> */}
-              <Spacer /> Ecem's Tags
+              {/* <Spacer /> Ecem's Tags */}
             </Text>
             <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
               <Badge
@@ -99,13 +99,13 @@ export default function Me() {
                 fontWeight={'400'}>
                 #art
               </Badge>
-              <Badge
+              {/* <Badge
                 px={2}
                 py={1}
                 bg={useColorModeValue('white', 'gray.800')}
                 fontWeight={'400'}>
                 #blender
-              </Badge>
+              </Badge> */}
               <Badge
                 px={2}
                 py={1}
