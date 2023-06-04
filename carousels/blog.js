@@ -74,7 +74,7 @@ export default function Me() {
                 }
               />
             </div> */}
-            <Heading fontSize={'2xl'} color={'white'} fontFamily={'body'}>
+            <Heading fontSize={'2xl'} color={'white'}>
               Venera Magazine
             </Heading>
             <Text fontWeight={600} color={'white'} size="sm" mb={4}>
