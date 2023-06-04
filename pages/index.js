@@ -94,11 +94,11 @@ export default function Home() {
       <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
 <Blog />
 <Me />
-    <img src={`${src}?dog`} alt="dog"/>
+    {/* <img src={`${src}?dog`} alt="dog"/>
       <img src={`${src}?cat`} alt="cat" />
       <img src={`${src}?goose`} alt="goose" />
       <img src={`${src}?rabbit`} alt="rabbit" />
-      <img src={`${src}?hedgehog`} alt="hedgehog" />
+      <img src={`${src}?hedgehog`} alt="hedgehog" /> */}
     </NukaCarousel>
     </>
 
