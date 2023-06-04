@@ -27,6 +27,11 @@ export default function Me() {
 
   return (
     <>
+          <Center>
+<Heading color={"white"}>Venera Magazine</Heading>
+{/* <Text fontSize={"large"}>Artist Spotlight</Text> */}
+</Center>
+
       {/* <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={20}> */}
       <Center py={6}>
         <Stack

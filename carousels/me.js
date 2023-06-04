@@ -31,10 +31,13 @@ export default function Me() {
     <>
       {/* <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={20}> */}
 
+      <Center>
+<Heading color={"white"}>Venera Magazine</Heading>
+{/* <Text fontSize={"large"}>Artist Spotlight</Text> */}
+</Center>
 
 
       <Center py={6}>
-
 
 
 

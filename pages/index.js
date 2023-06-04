@@ -85,11 +85,9 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Venera Club | Dashboard
+          Venera Magazine | Dashboard
         </title>
       </Head>
-
-
 
       <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
 <Blog />
