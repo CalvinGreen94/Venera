@@ -42,7 +42,7 @@ export default function Me() {
           borderWidth="1px"
           borderRadius="lg"
           w={{ sm: '100%', md: '600px' }}
-          height={{ sm: '476px', md: '800px' }}
+          height={{ sm: '476px', md: '825px' }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('black', 'gray.900')}
           boxShadow={'2xl'}
@@ -175,6 +175,7 @@ export default function Me() {
           </Stack>
         </Stack>
       </Center>
+      <br />
     </>
 
   )
