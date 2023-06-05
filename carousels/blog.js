@@ -111,7 +111,7 @@ export default function Me() {
                 py={1}
                 bg={useColorModeValue('white', 'gray.800')}
                 fontWeight={'400'}>
-                #lilith
+                #VeneraSolutions
               </Badge>
             </Stack>
 <Spacer />
@@ -122,7 +122,7 @@ export default function Me() {
               padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-              <Button
+              {/* <Button
                 flex={1}
                 fontSize={'sm'}
                 rounded={'full'}
@@ -130,7 +130,7 @@ export default function Me() {
                   bg: 'gray.200',
                 }}>
                 View art on openSea
-              </Button>
+              </Button> */}
               <Button
                 flex={1}
                 fontSize={'sm'}
