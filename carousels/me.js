@@ -155,7 +155,7 @@ export default function Me() {
                 _focus={{
                   bg: 'gray.200',
                 }}>
-                View art on openSea
+                View art on Foundation
               </Button>
               <Button
                 flex={1}
