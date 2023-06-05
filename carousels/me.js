@@ -101,7 +101,7 @@ export default function Me() {
               <Spacer />
             </Heading>
             <Heading fontSize={'medium'} color={'white'} fontFamily={'body'}>
-              Author: GammaI
+              {/* Author: GammaI */}
             </Heading>
 
             <Spacer />
