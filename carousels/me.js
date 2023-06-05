@@ -97,11 +97,11 @@ export default function Me() {
             {/* <Text position={'relative'}>Author: GammaI</Text> */}
 
             <Heading fontSize={'2xl'} color={'white'} fontFamily={'body'}>
-              Title
+              Meet your Maker
               <Spacer />
             </Heading>
             <Heading fontSize={'medium'} color={'white'} fontFamily={'body'}>
-              Author: Ecem @VeneraSolutions
+              Author: GammaI
             </Heading>
 
             <Spacer />
