@@ -85,7 +85,7 @@ export default function Me() {
               textAlign={'center'}
               color={useColorModeValue('white', 'white.400')}
               px={3}>
-              Venera Magazine is a weekly digital publication organization that presents the Dark Arts.
+              Venera Magazine is a weekly digital publication organization that presents a variety of artwork.
               {/* <Link href={'#'} color={'blue.400'}>
               
             </Link> */}
