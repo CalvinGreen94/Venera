@@ -19,7 +19,7 @@ export default function WTH() {
 
   // Initialze claimBCC Contract write
   const { config, error } = usePrepareContractWrite({
-    address: '0x2816e4B49a9d7ae07720a922a7A805F9fA5876c4',
+    address: '0x794231E774212Bb480fbD6312Bfa7354C2F9D0C6',
     abi: [
       {
         name: 'withdraw',

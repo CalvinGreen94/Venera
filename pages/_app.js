@@ -2,6 +2,7 @@ import { ChakraProvider, Box } from "@chakra-ui/react"
 import { MoralisProvider } from "react-moralis"
 import React, { Children } from "react";
 import "@styles/reset.css"
+// import "@styles/book.css"
 import store from "@src/redux/store";
 import { Provider } from "react-redux";
 import Layout from "@components/navbars/Layout"

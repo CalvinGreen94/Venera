@@ -27,6 +27,8 @@ import Carousel from "nuka-carousel";
 import Blog from "carousels/blog"
 import Me from "carousels/me"
 import NukaCarousel from "nuka-carousel";
+import Buy from "@components/mint/buyVen"
+import Sell from '@components/mint/sellVen'
 // import "../styles/styles.css";
 
 const MotionSimpleGrid = motion(SimpleGrid)
@@ -90,8 +92,11 @@ export default function Home() {
       </Head>
 
       <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
+<Buy />
+<Sell />
 <Blog />
 <Me />
+
     {/* <img src={`${src}?dog`} alt="dog"/>
       <img src={`${src}?cat`} alt="cat" />
       <img src={`${src}?goose`} alt="goose" />
