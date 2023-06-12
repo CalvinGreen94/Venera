@@ -26,8 +26,10 @@ import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui
 import Carousel from "nuka-carousel";
 import Blog from "carousels/blog"
 import Me from "carousels/me"
+import Buy from '@components/mint/buyVen'
 import NukaCarousel from "nuka-carousel";
 import Sell from '@components/mint/sellVen'
+import UI from '@components/mint/contractInfo'
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
 const MotionIconButton = motion(IconButton)
