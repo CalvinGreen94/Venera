@@ -84,10 +84,10 @@ export default function Rewards() {
 
   return (
     <>
-      <Box fontSize="xl" fontWeight="bold" align="right">
+      {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
 
       <p> Your $VeN Rewards: {data1}</p>
-      </Box>
+      {/* </Box> */}
     </>
   )
 }
