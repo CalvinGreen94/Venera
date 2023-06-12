@@ -115,8 +115,8 @@ export default function Buy() {
         <Stack
           borderWidth="1px"
           borderRadius="lg"
-          w={{ sm: '100%', md: '500px' }}
-          height={{ sm: '476px', md: '550px' }}
+          w={{ sm: '90%', md: '275px' }}
+          height={{ sm: '476px', md: '500px' }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('black', 'gray.900')}
           boxShadow={'2xl'}
@@ -147,7 +147,7 @@ export default function Buy() {
               Amount to purchase <Spacer /> *1111 minimum*
             </FormLabel>
 
-            <NumberInput step={0.01} min={0.01} max={100000000}defaultValue={0.01} onChange={handleChange} allowMouseWheel>
+            <NumberInput step={0.01}  max={100000000}defaultValue={0.01} onChange={handleChange} allowMouseWheel>
               <NumberInputField id="amount" value={amount1} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />
@@ -174,9 +174,9 @@ export default function Buy() {
                 }}>
                 Buy
               </Button> 
-              
+              <Sell />
+
           </FormControl>
-          <Sell />
           {/* <Spacer /> */}
           {/* Mint BCCDAO */}
 

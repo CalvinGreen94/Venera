@@ -111,17 +111,17 @@ export default function Sell() {
           e.preventDefault()
         }}>
               {/* <Center py={6}> */}
-        <Stack
+        {/* <Stack
           borderWidth="1px"
           borderRadius="lg"
           w={{ sm: '100%', md: '500px' }}
-          height={{ sm: '476px', md: '500px' }}
+          height={{ sm: '476px', md: '550px' }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('black', 'gray.900')}
           boxShadow={'2xl'}
           padding={4}>
-          {/* <Flex flex={1} bg="black"> */}
-            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Flex flex={1} bg="black">
+            <div style={{ width: '100%', height: '100%', position: 'relative' }}> */}
 
             {/* <video
               autoPlay
@@ -132,21 +132,21 @@ export default function Sell() {
               objectfit="cover"
               layout="fill"
               /> */}
-            </div>
+            {/* </div> */}
           {/* </Flex> */}
-          <Stack
+          {/* <Stack
             flex={1}
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
             p={1}
-            pt={2}></Stack>
+            pt={2}></Stack> */}
           <FormControl my="4" maxW="210" minW="210">
             <FormLabel htmlFor="amount" textAlign="right">
               Amount to sell <Spacer /> *1111 minimum*
             </FormLabel>
 
-            <NumberInput step={0.01} min={0.01} max={100000000}defaultValue={0.01} onChange={handleChange} allowMouseWheel>
+            <NumberInput step={0.01}  max={100000000}defaultValue={0.01} onChange={handleChange} allowMouseWheel>
               <NumberInputField id="amount" value={amount1} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />
@@ -174,7 +174,7 @@ export default function Sell() {
                 Sell
               </Button> 
           </FormControl>
-          <Spacer />
+          {/* <Spacer /> */}
           {/* Mint BCCDAO */}
 
 {/* <Button>Staking Coming Soon</Button> */}
@@ -182,7 +182,7 @@ export default function Sell() {
           {/* <Button disabled={!write} onClick={() => write?.()}>
             sell $VeN
           </Button> */}
-          </Stack>
+          {/* </Stack>
           <Spacer />
             <Stack
               width={'100%'}
@@ -190,7 +190,7 @@ export default function Sell() {
               direction={'row'}
               padding={2}
               justifyContent={'space-between'}
-              alignItems={'center'}>
+              alignItems={'center'}> */}
               {/* <Button
                 flex={1}
                 fontSize={'sm'}
@@ -218,7 +218,7 @@ export default function Sell() {
                 Follow on Twitter
               </Button> */}
               {/* <DaoBal /> */}
-            </Stack>
+            {/* </Stack> */}
           {/* </Stack> */}
         {/* </Stack> */}
       

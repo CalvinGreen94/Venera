@@ -90,10 +90,9 @@ export default function Home() {
           Venera Magazine | Dashboard
         </title>
       </Head>
-
+      <Buy />
       <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
-<Buy />
-<Sell />
+{/* <Sell /> */}
 <Blog />
 <Me />
 
@@ -103,6 +102,8 @@ export default function Home() {
       <img src={`${src}?rabbit`} alt="rabbit" />
       <img src={`${src}?hedgehog`} alt="hedgehog" /> */}
     </NukaCarousel>
+   
+
     </>
 
   );
