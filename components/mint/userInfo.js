@@ -18,7 +18,7 @@ export default function UI_User() {
 
   // Initialze claimBCC Contract write
   const { data, isError, isLoading } = useContractRead({
-    address: '0x794231E774212Bb480fbD6312Bfa7354C2F9D0C6',
+    address: '0x53F4851E1be049D24F8B3445b37ce1b90edCc369',
     abi: [
       {
         name: 'balanceOf',
