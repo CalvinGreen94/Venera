@@ -30,7 +30,8 @@ import NukaCarousel from "nuka-carousel";
 import Buy from "@components/mint/buyVen"
 import Sell from '@components/mint/sellVen'
 // import "../styles/styles.css";
-
+import cBal from '@components/mint/con_bal'
+import UI from '@components/mint/contractInfo'
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
 const MotionIconButton = motion(IconButton)
@@ -102,6 +103,8 @@ export default function Home() {
       <img src={`${src}?rabbit`} alt="rabbit" />
       <img src={`${src}?hedgehog`} alt="hedgehog" /> */}
     </NukaCarousel>
+    {/* <UI /> */}
+
    
 
     </>

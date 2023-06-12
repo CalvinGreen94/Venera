@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 import { useToast, Heading, Center, NumberInputStepper, Box, Spacer, NumberIncrementStepper, Button, Input, NumberDecrementStepper, NumberInputField, Text, FormControl, FormLabel, NumberInput } from "@chakra-ui/react"
 import styles from "@styles/MintButton.module.css"
 import Web3 from "web3";
-export default function UI_User() {
+export default function UI() {
   const [amount, setAmount] = React.useState(1111)
   const handleChange = (value) => setAmount(value)
   // Fetch user address
@@ -44,7 +44,7 @@ export default function UI_User() {
     //   value: String(amount),
     // },
     // Amount to minta
-    args: [address],
+    args: ['0x794231E774212Bb480fbD6312Bfa7354C2F9D0C6'],
   })
 //   console.log(config)
   console.log(isError)
@@ -86,7 +86,7 @@ export default function UI_User() {
     <>
       <Box fontSize="xl" fontWeight="bold" align="right">
 
-      <Text fontWeight={600} color={'white'} size="sm" mb={4}> Your:  $VeN Balance: {data1}</Text>
+      <Text fontWeight={600} color={'white'} size="sm" mb={4}> Contract  $VeN Balance: {data1}</Text>
       </Box>
     </>
   )

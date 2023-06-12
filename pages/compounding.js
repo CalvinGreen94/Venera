@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { About } from '@components/animations/AnimatedTitles'
 import styles from '@styles/About.module.css'
 import CVen from '@components/mint/CompoundVen'
-import UI from '@components/mint/userInfo'
+import UI from '@components/mint/contractInfo'
 import CR from '@components/mint/claimRewards'
 import Rewards from '@components/mint/rewards'
 export default function AboutPage() {

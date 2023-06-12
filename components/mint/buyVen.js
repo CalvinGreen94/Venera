@@ -13,6 +13,10 @@ import {
   } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui/react'
 import Sell from "./sellVen";
+// import contract_balance from "./con_bal";
+import UI from '@components/mint/contractInfo'
+import UI_User from "./userInfo";
+
 export default function Buy() {
   const [amount1, setAmount] = React.useState(0.01)
   const handleChange = (value) => setAmount(value) 
@@ -108,6 +112,7 @@ export default function Buy() {
     <>
       {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
       <Center py={6}>
+      
         <form className={styles.btn} onSubmit={async e => {
           e.preventDefault()
         }}>
@@ -167,14 +172,17 @@ export default function Buy() {
                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                 }
                 _hover={{
-                  bg: 'blue.500',
+                    bg: "#79cee3",
                 }}
                 _focus={{
                   bg: 'blue.500',
                 }}>
                 Buy
               </Button> 
+              <UI_User />
+              <UI />
               <Sell />
+              {/* <contract_balance /> */}
 
           </FormControl>
           {/* <Spacer /> */}

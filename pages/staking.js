@@ -7,7 +7,7 @@ import SBV from '@components/mint/StakeButtonVenera'
 import WTH from '@components/mint/WithdrawVEN'
 import Rewards from '@components/mint/rewards'
 import CR from '@components/mint/claimRewards'
-import UI from '@components/mint/userInfo'
+import UI from '@components/mint/contractInfo'
 export default function AboutPage() {
     return (
         <Box>

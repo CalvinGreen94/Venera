@@ -4,7 +4,7 @@ import { ethers } from "ethers";
 import { useToast, Heading, Center, NumberInputStepper, Box, Spacer, NumberIncrementStepper, Button, Input, NumberDecrementStepper, NumberInputField, Text, FormControl, FormLabel, NumberInput } from "@chakra-ui/react"
 import styles from "@styles/MintButton.module.css"
 import Web3 from "web3";
-export default function UI_User() {
+export default function cBal() {
   const [amount, setAmount] = React.useState(1111)
   const handleChange = (value) => setAmount(value)
   // Fetch user address
@@ -30,7 +30,7 @@ export default function UI_User() {
             { internalType: 'address', name: 'account', type: 'address' },
           ],
         outputs: [
-            {
+			{
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
@@ -44,12 +44,13 @@ export default function UI_User() {
     //   value: String(amount),
     // },
     // Amount to minta
-    args: [address],
+    args: ['0x794231E774212Bb480fbD6312Bfa7354C2F9D0C6'],
   })
 //   console.log(config)
   console.log(isError)
   console.log(data)
   const data1 = String(data/1000000000000000000)
+  console.log(data1)
 //   // Contract Write
 //   const { data, write } = useContractWrite({
 //     ...config,
@@ -84,10 +85,10 @@ export default function UI_User() {
 
   return (
     <>
-      <Box fontSize="xl" fontWeight="bold" align="right">
+      {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
 
-      <Text fontWeight={600} color={'white'} size="sm" mb={4}> Your:  $VeN Balance: {data1}</Text>
-      </Box>
+      Your $VeN Rewards: {data1}
+      {/* </Box> */}
     </>
   )
 }
