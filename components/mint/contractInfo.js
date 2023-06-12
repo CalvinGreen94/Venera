@@ -84,10 +84,10 @@ export default function UI() {
 
   return (
     <>
-      <Box fontSize="xl" fontWeight="bold" align="right">
+      {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
 
       <Text fontWeight={600} color={'white'} size="sm" mb={4}> Contract  $VeN Balance: {data1}</Text>
-      </Box>
+      {/* </Box> */}
     </>
   )
 }
