@@ -85,8 +85,8 @@ export default function DaoBal() {
         <Stack
           borderWidth="1px"
           borderRadius="lg"
-          w={{ sm: '100%', md: '500px' }}
-          height={{ sm: '476px', md: '550px' }}
+          w={{ sm: '100%', md: '400px' }}
+          height={{ sm: '476px', md: '400px' }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('black', 'gray.900')}
           boxShadow={'2xl'}
