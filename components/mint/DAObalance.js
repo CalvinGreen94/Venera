@@ -122,7 +122,7 @@ export default function DaoBal() {
                 }
               />
             </div> */}
-      <Heading><Text fontWeight={300} color={'white'} size="sm" mb={4}>Your TAUROS Balance: {String(data)}</Text></Heading>
+      <Heading><Text fontWeight={300} color={'white'} size="sm" mb={4}>Your DAO Balance: {String(data)}</Text></Heading>
       <Text color={'white'} size="sm">Must Wait 7 Days to remove DAO stake</Text> 
       {/* <Heading>Your $TAU Balance: {data1}</Heading>  */}
       </Stack>
