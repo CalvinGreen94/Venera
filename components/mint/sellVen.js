@@ -13,15 +13,15 @@ import {
   } from '@chakra-ui/react'
   import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui/react'
 export default function Sell() {
-  const [amount1, setAmount] = React.useState(0.01)
+  const [amount, setAmount] = React.useState(0)
   const handleChange = (value) => setAmount(value) 
   // const [amount2] = Web3.utils.toBN(amount1) 
 
-  const router = useRouter();
-  useEffect(() => {
-    if (!amount1) router.replace("/");
-  }, [amount1]);
-  const amount = Web3.utils.toWei(String(amount1),"ether")
+  // const router = useRouter();
+  // useEffect(() => {
+  //   if (!amount1) router.replace("/");
+  // }, [amount1]);
+  // const amount = Web3.utils.toWei(String(amount1),"ether")
 
 
   // Fetch user address
@@ -64,7 +64,7 @@ export default function Sell() {
         // value: String(amount/100),
         gasLimit: 270000,
       },
-    args: [String(amount)],
+    args: [Web3.utils.toWei(String(amount/1000000),"ether")],
   })
   console.log(config)
   console.log(error)
@@ -107,9 +107,9 @@ export default function Sell() {
     <>
       {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
       <Center py={6}>
-        <form className={styles.btn} onSubmit={async e => {
+        {/* <form className={styles.btn} onSubmit={async e => {
           e.preventDefault()
-        }}>
+        }}> */}
               {/* <Center py={6}> */}
         {/* <Stack
           borderWidth="1px"
@@ -141,13 +141,20 @@ export default function Sell() {
             alignItems="center"
             p={1}
             pt={2}></Stack> */}
+          <Stack
+            flex={1}
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            p={1}
+            pt={2}></Stack>
           <FormControl my="4" maxW="210" minW="210">
             <FormLabel htmlFor="amount" textAlign="right">
-              Amount to sell <Spacer /> *1111 minimum*
+              Amount to Sell<Spacer /> *1111 minimum*
             </FormLabel>
 
-            <NumberInput step={0.01}  max={100000000}defaultValue={0.01} onChange={handleChange} allowMouseWheel>
-              <NumberInputField id="amount" value={amount1} bg="gray.200" boxShadow="lg" />
+            <NumberInput step={1}  min ={1111} max={100000000}defaultValue={1111} onChange={handleChange} allowMouseWheel>
+              <NumberInputField id="amount" value={amount} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />
                 <Spacer />
@@ -155,7 +162,7 @@ export default function Sell() {
               </NumberInputStepper>
             </NumberInput>
             <Button
-               disabled={!write} 
+               
                onClick={() => write?.()}
                 flex={10}
                 fontSize={'xl'}
@@ -226,7 +233,7 @@ export default function Sell() {
           <Box>{error && (
             <div>{error.message}</div>
           )}</Box>
-        </form>
+        {/* </form> */}
       {/* </Box> */}
       </Center>
     </>

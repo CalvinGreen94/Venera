@@ -30,6 +30,7 @@ import Buy from '@components/mint/buyVen'
 import NukaCarousel from "nuka-carousel";
 import Sell from '@components/mint/sellVen'
 import UI from '@components/mint/contractInfo'
+import Stake from '@components/mint/stakeDAO'
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
 const MotionIconButton = motion(IconButton)
@@ -89,7 +90,12 @@ export default function Home() {
           Venera Magazine | Dashboard
         </title>
       </Head>
+      <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
+
       <Buy />
+      <Stake />
+      </NukaCarousel>
+
       <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>
 {/* <Sell /> */}
 <Blog />

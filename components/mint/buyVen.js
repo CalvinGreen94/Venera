@@ -18,15 +18,15 @@ import UI from '@components/mint/contractInfo'
 import UI_User from "./userInfo";
 
 export default function Buy() {
-  const [amount1, setAmount] = React.useState(0.01)
+  const [amount, setAmount] = React.useState(0)
   const handleChange = (value) => setAmount(value) 
   // const [amount2] = Web3.utils.toBN(amount1) 
 
-  const router = useRouter();
-  useEffect(() => {
-    if (!amount1) router.replace("/");
-  }, [amount1]);
-  const amount = Web3.utils.toWei(String(amount1),"ether")
+  // const router = useRouter();
+  // useEffect(() => {
+  //   if (!amount1) router.replace("/");
+  // }, [amount1]);
+  // const amount = Web3.utils.toWei(String(amount1),"ether")
 
 
   // Fetch user address
@@ -66,7 +66,7 @@ export default function Buy() {
     // Amount to minta
     overrides: {
         // Override Price 
-        value: amount/100,
+        value: Web3.utils.toWei(String(amount/1000000),"ether"),
         gasLimit: 270000,
       },
     args: [],
@@ -113,9 +113,9 @@ export default function Buy() {
       {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
       <Center py={6}>
       
-        <form className={styles.btn} onSubmit={async e => {
+        {/* <form className={styles.btn} onSubmit={async e => {
           e.preventDefault()
-        }}>
+        }}> */}
               
         <Stack
           borderWidth="1px"
@@ -152,8 +152,8 @@ export default function Buy() {
               Amount to purchase <Spacer /> *1111 minimum*
             </FormLabel>
 
-            <NumberInput step={0.01}  max={100000000}defaultValue={0.01} onChange={handleChange} allowMouseWheel>
-              <NumberInputField id="amount" value={amount1} bg="gray.200" boxShadow="lg" />
+            <NumberInput step={1}  min ={1111} max={100000000}defaultValue={1111} onChange={handleChange} allowMouseWheel>
+              <NumberInputField id="amount" value={amount} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />
                 <Spacer />
@@ -161,7 +161,7 @@ export default function Buy() {
               </NumberInputStepper>
             </NumberInput>
             <Button
-               disabled={!write} 
+               
                onClick={() => write?.()}
                 flex={10}
                 fontSize={'xl'}
@@ -235,12 +235,15 @@ export default function Buy() {
         {/* </Stack> */}
       
 
-          <Box>{error && (
+          {/* <Box>{error && (
             <div>{error.message}</div>
-          )}</Box>
-        </form>
+          )}</Box> */}
+        {/* </form> */}
       {/* </Box> */}
       </Center>
+      <Box>{error && (
+            <div>{error.message}</div>
+          )}</Box>
     </>
   )
 }
