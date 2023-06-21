@@ -18,7 +18,7 @@ export default function UI() {
 
   // Initialze claimBCC Contract write
   const { data, isError, isLoading } = useContractRead({
-    address: '0x53F4851E1be049D24F8B3445b37ce1b90edCc369',
+    address: '0x9521554658207895b9d0Fa5B901145FD28FAdc9A',
     abi: [
       {
         name: 'balanceOf',
@@ -44,7 +44,7 @@ export default function UI() {
     //   value: String(amount),
     // },
     // Amount to minta
-    args: ['0x53F4851E1be049D24F8B3445b37ce1b90edCc369'],
+    args: ['0x9521554658207895b9d0Fa5B901145FD28FAdc9A'],
   })
 //   console.log(config)
   console.log(isError)

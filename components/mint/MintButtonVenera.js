@@ -19,10 +19,10 @@ export default function MBV() {
 
   // Initialze claimTauros Contract write
   const { config, error } = usePrepareContractWrite({
-    address: '0x3Dd3E53fC4fE90e1E750CF782cA7273932867039',
+    address: '0x065a08Ac19592fF21Ef287b8F1d4Cc4dFa558BE5',
     abi: [
       {
-        name: 'claimMembership',
+        name: 'claim',
         type: 'function',
         stateMutability: 'payable',
         inputs:
@@ -33,7 +33,7 @@ export default function MBV() {
         outputs: [],
       },
     ],
-    functionName: 'claimMembership',
+    functionName: 'claim',
     overrides: {
       gasLimit: 270000,
       // Override Price 

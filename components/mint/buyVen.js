@@ -38,7 +38,7 @@ export default function Buy() {
 
   // Initialze claimBCC Contract write
   const { config, error } = usePrepareContractWrite({
-    address: '0x53F4851E1be049D24F8B3445b37ce1b90edCc369',
+    address: '0x9521554658207895b9d0Fa5B901145FD28FAdc9A',
     abi: [
       {
         name: 'buyTokens',
