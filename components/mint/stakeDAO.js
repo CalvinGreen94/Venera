@@ -100,7 +100,7 @@ export default function Stake() {
           borderWidth="1px"
           borderRadius="lg"
           w={{ sm: '100%', md: '500px' }}
-          height={{ sm: '476px', md: '500px' }}
+          height={{ sm: '476px', md: '600px' }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('black', 'gray.900')}
           boxShadow={'2xl'}
