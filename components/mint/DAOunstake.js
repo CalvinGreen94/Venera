@@ -85,7 +85,15 @@ export default function Unstake() {
   // console.log(write)
   // console.log(price * amount)
 
+  String.prototype.format = function () {
+    var i = 0, args = arguments;
+    return this.replace(/{}/g, function () {
+      return typeof args[i] != 'undefined' ? args[i++] : '';
+    });
+  };
 
+  var image = "https://ipfs.io/ipfs/Qmb2BTV5Uw6kYeSPa4cYE6DHSPv7ip8UcAA4dYXCnVPfQU/{}.jpg".format(String(amount))
+  console.log(image)
   return (
     <>
 
@@ -183,6 +191,7 @@ export default function Unstake() {
             </NumberInput>
           </FormControl>
           {/* <Spacer /> */}
+          {/* <img src={image} /> */}
           <Button onClick={() => write?.()}>
             UnStake DAO
           </Button> 
