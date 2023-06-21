@@ -86,7 +86,7 @@ export default function Rewards() {
     <>
       {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
 
-      <p> Your $VeN Rewards: {data1}</p>
+     <Text color={"white"}> Your $VeN Rewards: {data1}</Text>
       {/* </Box> */}
     </>
   )

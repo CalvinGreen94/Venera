@@ -31,6 +31,8 @@ import NukaCarousel from "nuka-carousel";
 import Sell from '@components/mint/sellVen'
 import UI from '@components/mint/contractInfo'
 import Stake from '@components/mint/stakeDAO'
+import STA from '@components/mint/StakeButtonVenera'
+import WTHAll from '@components/mint/WithdrawVEN'
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
 const MotionIconButton = motion(IconButton)
@@ -94,6 +96,8 @@ export default function Home() {
 
       <Buy />
       <Stake />
+      <STA />
+      <WTHAll />
       </NukaCarousel>
 
       <NukaCarousel cellAlign="center" slidesToShow={1} slidesToScroll={1} cellSpacing={50}>

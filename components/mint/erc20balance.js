@@ -132,8 +132,8 @@ export default function UI() {
                 }
               />
             </div> */}
-      <Heading><Text fontWeight={300} color={'white'} size="sm" mb={4}>Your $TAU Balance: {data1}</Text></Heading>
-      {/* <Heading>Your $TAU Balance: {data1}</Heading>  */}
+      <Heading><Text fontWeight={300} color={'white'} size="sm" mb={4}>Your $VeN Balance: {data1}</Text></Heading>
+      {/* <Heading>Your $VeN Balance: {data1}</Heading>  */}
       </Stack>
             <Spacer />
             <Stack
