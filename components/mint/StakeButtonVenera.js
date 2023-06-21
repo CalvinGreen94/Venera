@@ -13,10 +13,10 @@ import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui
 import UI from '@components/mint/erc20balance';
 import Rewards from "./rewards";
 export default function STA() {
-  const [amount1, setAmount] = React.useState(1111)
+  const [amount, setAmount] = React.useState(0)
   const handleChange = (value) => setAmount(value)
   // const [amount2] = Web3.utils.toBN(amount1) 
-  const amount = Web3.utils.toWei(String(amount1),"ether")
+  // const amount = Web3.utils.toWei(String(amount1),"ether")
 
   // Fetch user address
   const { address } = useAccount()
@@ -148,7 +148,7 @@ export default function STA() {
             </FormLabel>
 
             <NumberInput step={1} min={1111} max={100000000}defaultValue={0} onChange={handleChange} allowMouseWheel>
-              <NumberInputField id="amount" value={Web3.utils.toWei(String(amount1),"ether")} bg="gray.200" boxShadow="lg" />
+              <NumberInputField id="amount" value={amount} bg="gray.200" boxShadow="lg" />
               <NumberInputStepper bg="#FA897B">
                 <NumberIncrementStepper borderLeft="none" />
                 <Spacer />
