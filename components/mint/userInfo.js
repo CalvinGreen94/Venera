@@ -84,10 +84,10 @@ export default function UI_User() {
 
   return (
     <>
-      <Box fontSize="xl" fontWeight="bold" align="right">
+      {/* <Box fontSize="xl" fontWeight="bold" align="right"> */}
 
       <Text fontWeight={600} color={'white'} size="sm" mb={4}> Your:  $VeN Balance: {data1}</Text>
-      </Box>
+      {/* </Box> */}
     </>
   )
 }

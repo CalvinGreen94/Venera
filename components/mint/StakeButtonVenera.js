@@ -11,6 +11,8 @@ import {
 } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui/react'
 import UI from '@components/mint/erc20balance';
+// import CVen from "./CompoundVen";
+// <CVen />
 import Rewards from "./rewards";
 export default function STA() {
   const [amount, setAmount] = React.useState(0)
@@ -163,6 +165,8 @@ export default function STA() {
           </Button>
           <Rewards />
 
+          
+
 
           {/* <Box>{error && (
             <div>{error.message}</div>
@@ -204,6 +208,7 @@ export default function STA() {
                 }}>
                 Follow on Twitter
               </Button> */}
+              
               <UI />
             </Stack>
             {/* <CR /> */}

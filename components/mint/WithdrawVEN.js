@@ -12,7 +12,7 @@ import {
 import { Card, CardHeader, CardBody, CardFooter, Image, Stack } from '@chakra-ui/react'
 import Rewards from "./rewards";
 import CR from "./claimRewards";
-
+import CVen from "./CompoundVen";
 export default function WTHAll() {
   const [amount1, setAmount] = React.useState(1111)
   const handleChange = (value) => setAmount(value)
@@ -156,6 +156,7 @@ export default function WTHAll() {
           <Button disabled={!write} onClick={() => write?.()}>
             Withdraw $VeN
           </Button> 
+          <CVen />
           
 
 
@@ -199,6 +200,8 @@ export default function WTHAll() {
                 Follow on Twitter
               </Button> */}
               <Rewards />
+              
+
               {/* <CR /> */}
             </Stack>
           </Stack>

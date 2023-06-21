@@ -53,7 +53,7 @@ export default function CVen() {
         duration: 9000,
         isClosable: true,
       })
-      console.log("Compoundl successful");
+      console.log("Compound successful");
     },
     onError(error) {
       toast({
@@ -78,23 +78,23 @@ export default function CVen() {
     <>
       <Box fontSize="xl" fontWeight="bold" align="right">
 
-        <form className={styles.btn} onSubmit={async e => {
+        {/* <form className={styles.btn} onSubmit={async e => {
           e.preventDefault()
-        }}>
+        }}> */}
             <FormLabel htmlFor="amount" textAlign="right">
               Compound Rewards
             </FormLabel>
 
-<Button>Compounding not yet available</Button>
-          {/* <Button disabled={!write} onClick={() => write?.()}>
+{/* <Button>Compounding not yet available</Button> */}
+          <Button disabled={!write} onClick={() => write?.()}>
             Compound $VeN
-          </Button> */}
+          </Button>
 
 
           {/* <Box>{error && (
             <div>{error.message}</div>
           )}</Box> */}
-        </form>
+        {/* </form> */}
       </Box>
     </>
   )
