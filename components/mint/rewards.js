@@ -18,10 +18,10 @@ export default function Rewards() {
 
   // Initialze claimBCC Contract write
   const { data, isError, isLoading } = useContractRead({
-    address: '0x9521554658207895b9d0Fa5B901145FD28FAdc9A',
+    address: '0xc11Aab3e363e3Ca9Ff5e7E82c6298004C39B7Ec2',
     abi: [
       {
-        name: 'calculateRewardsUI',
+        name: 'calculateRewards',
         type: 'function',
         stateMutability: 'view',
         inputs:
@@ -38,7 +38,7 @@ export default function Rewards() {
         ],
       },
     ],
-    functionName: 'calculateRewardsUI',
+    functionName: 'calculateRewards',
     // overrides: {
     //   // Override Price 
     //   value: String(amount),
@@ -49,7 +49,7 @@ export default function Rewards() {
 //   console.log(config)
   console.log(isError)
   console.log(data)
-  const data1 = String(data/1000000000000000000)
+  const data1 = String(data/100000)
 //   // Contract Write
 //   const { data, write } = useContractWrite({
 //     ...config,

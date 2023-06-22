@@ -18,7 +18,7 @@ export default function depInfo() {
 
   // Initialze claimBCC Contract write
   const { data, isError, isLoading } = useContractRead({
-    address: '0x9521554658207895b9d0Fa5B901145FD28FAdc9A',
+    address: '0xc11Aab3e363e3Ca9Ff5e7E82c6298004C39B7Ec2',
     abi: [
       {
         name: 'getDepositInfo',

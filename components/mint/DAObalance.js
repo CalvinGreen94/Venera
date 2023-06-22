@@ -18,7 +18,7 @@ export default function DaoBal() {
   const { address,isConnected } = useAccount()
 
   const {data, isError, isLoading,isSuccess}= useContractRead({
-    address: '0x065a08Ac19592fF21Ef287b8F1d4Cc4dFa558BE5',
+    address: '0x209999D71C5D422dB0d1ce92860d75475608fFad',
     abi: [
         {
           name: 'balanceOf',
@@ -46,7 +46,7 @@ export default function DaoBal() {
   })
 
   const {Id}= useContractRead({
-    address: '0x065a08Ac19592fF21Ef287b8F1d4Cc4dFa558BE5',
+    address: '0x209999D71C5D422dB0d1ce92860d75475608fFad',
     abi: [
         {
           name: 'walletOfOwner',
