@@ -92,7 +92,27 @@ export default function Stake() {
 
   var image = "https://ipfs.io/ipfs/Qmb2BTV5Uw6kYeSPa4cYE6DHSPv7ip8UcAA4dYXCnVPfQU/{}.jpg".format(String(amount))
   console.log(image)
+  // if (!isConnected && data<1)
+  // return (
+  //   <>
+  //   <Header />
+  //   <Center>
+  //   <h1>Please connect wallet to access Governance</h1>
+  //   </Center>
+  //   </>
+  // );
 
+  // if (isConnected && data<1)
+  // return (
+  //   <>
+  //   <Header />
+  //   <Center>
+  //   <h1>Must own One TaurosDAO to Propose and Vote</h1>
+  //   </Center>
+  //   </>
+  // );
+
+  // if (isConnected && data>=1)
   return (
     <>
       <Center py={6}>

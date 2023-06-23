@@ -33,6 +33,7 @@ import UI from '@components/mint/contractInfo'
 import Stake from '@components/mint/stakeDAO'
 import STA from '@components/mint/StakeButtonVenera'
 import WTHAll from '@components/mint/WithdrawVEN'
+import GPT from '@components/GPT/gpt'
 const MotionSimpleGrid = motion(SimpleGrid)
 const MotionBox = motion(Box)
 const MotionIconButton = motion(IconButton)
@@ -111,6 +112,7 @@ export default function Home() {
       <img src={`${src}?rabbit`} alt="rabbit" />
       <img src={`${src}?hedgehog`} alt="hedgehog" /> */}
     </NukaCarousel>
+    <GPT />
     {/* <UI /> */}
 
    
